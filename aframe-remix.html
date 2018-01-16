@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene fog="type: linear; color: black">
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+    
+      <a-entity camera="userHeight: 1.6" wasd-controls look-controls light="type: point; intensity: 0.75; distance: 4; decay: 2">
+        <a-cylinder position="1 0 -1" rotation="0 45 0" color="red" material="shader: flat" radius="0.03" height="1" light="type: point; intensity: 0.75; distance: 10; decay: 2; color: red"></a-cylinder>
+        <a-cylinder position="1 -0.5 -1" radius="0.04" height=".25" color="grey" shadow></a-cylinder>
+        <a-sphere position=".95 -0.5 -1" radius="0.08" color="#ffcd94" shadow></a-sphere>
+        <a-cylinder position=".90 -0.6 -1" rotation="20 40 140" radius="0.05" height=".25" color="#ffcd94" shadow></a-cylinder>
+        <a-cylinder position=".68 -0.77 -.90" rotation="20 40 140" radius="0.06" height=".5" color="#1a000d" shadow></a-cylinder>
+      </a-entity>
+
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
