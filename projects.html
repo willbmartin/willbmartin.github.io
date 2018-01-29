@@ -7,9 +7,41 @@ layout: default
 	<a href="http://willmartian.com/"><h3>About Me</h3></a>
 </nav>
 <article>
-	<h3>Where's My Stuff: tool to help communities affected by disasters recover personal belongings</h3>
-	<h3>Game of Thrones Story Structure Tool</h3>
-	<h3>Medical Droid: health "advice" Twitter bot</h3>
-	<h3>Copy and Paint: stamp inspired drawing tool</h3>
-	<h3>Willmartian.com</h3>
+	<script type="text/javascript">
+		function loadDiv(div) {
+   			if (document.getElementById(div).style.display == "none") {
+   				document.getElementById(div).style.display = "block";
+   			} else {
+   				document.getElementById(div).style.display = "none";
+   			}
+		}
+	</script>
+	<a href="javascript:void(0);" onclick="loadDiv('GOT')"><h3>Rapid Prototyping: Game of Thrones Companion Tool</h3></a>
+	<div id="GOT" style="display: none">
+		<a href="github.com/willbmartin/">View on GitHub</a>
+		<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/VacantAmpleGonolek' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
+	</div>
+
+	<a href="javascript:void(0);" onclick="loadDiv('VR')"><h3>Browser VR Demo: A Night in the Woods</h3></a>
+	<div id="VR" style="display: none">
+		<a href="github.com/willbmartin/">View on GitHub</a>
+	</div>
+
+	<a href="javascript:void(0);" onclick="loadDiv('WMS')"><h3>Where's My Stuff: Disaster Recovery Mobile App</h3></a>
+	<div id="WMS" style="display: none">
+		<a href="github.com/willbmartin/">View on GitHub</a>
+	</div>
+
+	<a href="javascript:void(0);" onclick="loadDiv('MD')"><h3>Medical Droid: Health "Advice" Twitter Bot</h3></a>
+	<div id="MD" style="display: none">
+		<a href="github.com/willbmartin/">View on GitHub</a>
+		<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/HauntingWaterloggedAmazonparrot' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
+	</div>
+
+	<a href="javascript:void(0);" onclick="loadDiv('CAP')"><h3>Copy and Paint: Stamp-inspired Drawing Tool</h3></a>
+	<div id="CAP" style="display: none">
+		<a href="github.com/willbmartin/">View on GitHub</a>
+	</div>
+
+	<p>This site is also one of my personal projects, made from scratch with HTML, JS, and CSS. It is served on GitHub Pages, using Jekyll.</p>
 </article>
