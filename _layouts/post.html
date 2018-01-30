@@ -1,83 +1,24 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<title>willmartian.com</title>
+		<title>👽 will martian</title>
+		<link rel="stylesheet" type="text/css" href="../../../style.css">
+		<link rel="stylesheet" type="text/css" href="../../../fonts/font.css">
 	</head>
-
-	<style>
-		.flex-container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		body{
-			margin: 1em auto;
-			max-width:40em;
-			padding:0 .62em;
-			font:1.2em/1.62 sans-serif;
-		}
-
-		h1 {
-			color: black;
-		}
-
-		a {
-			text-decoration: none;
-			color: #2b7bb9;
-		}
-
-		nav * {
-			display: inline;
-			/*color: #4c80d3;*/
-			line-height:1.2;
-		}
-
-		nav a {
-			padding: 8px 16px;
-			border-radius: 5px;
-			transition: background-color .3s;
-		}
-
-		nav a.active {
-			background-color: #2b7bb9;
-    		color: white;
-    		border-radius: 5px;
-		}
-
-		nav a:hover:not(.active) {
-			background-color: #ddd;
-			border-radius: 5px;
-			transition: background-color .3s;
-		}
-
-		footer {
-			position: fixed;
-		  	left: 0;
-		    bottom: 0;
-		    width: 100%;
-		    background-color: #e6f2ff;
-		    padding: .5em;
-		    text-align: center;
-		}
-	</style>
-
 	<body>
 		<div class="flex-container">
 			<header>
 				<a href="http://willmartian.com/"><h1>Will Marti(a)n 👽</h1></a>
 			</header>
-			<nav>
-				<a class="active" href="http://willmartian.com/blog.html"><h3>Blog</h3></a>
-				<a href="http://willmartian.com/projects.html"><h3>Projects</h3></a>
-				<a href="http://willmartian.com/"><h3>About Me</h3></a>
-			</nav>
 			<article>
+				<nav>
+					<a class="active" href="http://willmartian.com/blog.html"><h3>Blog</h3></a>
+					<a href="http://willmartian.com/projects.html"><h3>Projects</h3></a>
+					<a href="http://willmartian.com/"><h3>About Me</h3></a>
+				</nav>
 				{{ content }}
 			</article>
-			<footer>
-				<!-- <a href="https://twitter.com/will_martian?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @will_martian</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	  			<a href="mailto:contact@willmartian.com">contact@willmartian.com 📧</a> -->
-			</footer>
+			<footer></footer>
 		</div>
 	</body>
 </html>

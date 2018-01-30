@@ -5,6 +5,10 @@ date:   2017-12-21 20:53:25 -0500
 ---
 
 
+_Hey everyone! In the near future, I will be starting a blog detailing some of my academic pursuits and personal interests, such as games, education, and the open web. For now, here is my test post._
+
+...
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim ut augue non mattis. Nullam non tempor velit, et volutpat turpis. Integer at turpis porta, viverra turpis eget, iaculis ligula. Maecenas suscipit sem in massa convallis laoreet. Quisque id tristique sapien, eu aliquam arcu. Morbi gravida nec orci eu congue. Etiam mattis sit amet magna at pharetra. Proin malesuada libero vel lectus facilisis, quis vulputate eros consequat. Etiam sit amet mollis libero, id interdum augue. Curabitur rhoncus magna commodo enim maximus viverra. Duis viverra enim in tristique lobortis. Aenean eget mollis magna. Aliquam sodales justo vitae mi hendrerit, non gravida est lobortis. Suspendisse potenti.
 
 Pellentesque vel dolor quis turpis scelerisque tincidunt ac in tellus. Morbi elementum sit amet lacus ut suscipit. Pellentesque at nunc ut diam fermentum viverra id eget ex. Nulla facilisi. Proin libero nulla, gravida sed sagittis vel, bibendum a lectus. Integer eu urna nunc. Nullam ut mauris auctor metus tempor commodo ac ac purus. Mauris dolor orci, fermentum in consectetur eget, faucibus et augue. Aenean convallis neque pulvinar, rutrum nisl ut, laoreet risus. Nullam eget dignissim massa. Sed mauris mauris, consectetur quis lacinia vel, mollis vitae est. Aenean lectus purus, tempor nec sem id, facilisis placerat magna. Nunc a eros dictum, tempor sem a, auctor elit. Donec lacinia nisl a enim scelerisque ultrices.
