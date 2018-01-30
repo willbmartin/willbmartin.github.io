@@ -7,19 +7,7 @@ layout: default
 	<a href="http://willmartian.com/"><h3>About Me</h3></a>
 </nav>
 <article>
-	<script type="text/javascript">
-		function loadDiv(div) {
-			var header = document.getElementById(div + 'h').innerHTML;
-   			if (document.getElementById(div).style.display == "none") {
-   				
-   				document.getElementById(div + 'h').innerHTML = '-' + header.slice(1, header.length);
-   				document.getElementById(div).style.display = "block";
-   			} else {
-   				document.getElementById(div).style.display = "none";
-   				document.getElementById(div + 'h').innerHTML = '+' + header.slice(1, header.length);
-   			}
-		}
-	</script>
+	
 	<a href="javascript:void(0);" onclick="loadDiv('GOT')"><h4 id="GOTh">+ Rapid Prototyping: Game of Thrones Companion Tool</h4></a>
 	<div id="GOT" style="display: none">
 		<blockquote>
