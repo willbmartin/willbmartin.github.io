@@ -1,55 +1,19 @@
 ---
 layout: default
 ---
-<nav>
-	<a href="http://willmartian.com/blog.html"><h3>Blog</h3></a>
-	<a href="http://willmartian.com/projects.html"><h3>Projects</h3></a>
-	<a class="active" href="http://willmartian.com/"><h3>About Me</h3></a>
-</nav>
-<article>
-	<blockquote>
-	Hello world! Welcome to my little corner of the net. I am studying Psychology at Georgia Tech, and minoring in Computer Science. I have interests in games, human-computer interaction, educational technology, and <strong>everything open source.</strong> I am a...
-	</blockquote>
-
-	<a href="javascript:void(0);" onclick="loadDiv('1')"><h4 id="1h">+ Quality Assurance Analyst @ Cartoon Network Game Studio</h4></a>
-	<div id="1" style="display: none">
-		<blockquote>
-			<img alt="CN Co-ops and interns, Fall 2017" src="./assets/cnBanner.jpg"/>
-			For two semesters, I have worked full time at Cartoon Network as a Quality Assurance Analyst on the games team, alternating with my semesters in school. My responsibilities included:
-			<ul>
-				<li>Testing and ensuring performance of games and applications over a variety of platforms including Xbox, PlayStation, Steam, Android, iOS, and web.</li>
-				<li>Collaborating with developers, producers, and designers to resolve issues, meet design standards, and improve game experience.</li>
-				<li>Leading usability and play testing to ensure effective user experiences.</li>
-			</ul>
-			Read about one of our most recent games <a href="https://kotaku.com/the-new-ok-k-o-video-game-is-really-good-1822340473">here</a>.
-		</blockquote>
-	</div>
-
-	<a href="javascript:void(0);" onclick="loadDiv('2')"><h4 id="2h">+ Games Development Researcher @ DILAC</h4></a>
-	<div id="2" style="display: none">
-		<blockquote>
-			As part of the Digital Integrative Liberal Arts Center (DILAC), I was tasked with rapidly prototyping and interating on designs to illustrate arcs in Game of Thrones.
-		</blockquote>
-	</div>
-
-	<a href="javascript:void(0);" onclick="loadDiv('3')"><h4 id="3h">+ Undergraduate Researcher @ Georgia Tech</h4></a>
-	<div id="3" style="display: none">
-		<blockquote>
-			During my time at Georgia Tech, I have been a part of two research teams in the Vertically Integrated Projects program.
-			<ul>
-				<li><b>Academic Resilience:</b> (Currently Investigating)</li>
-				<p>Why do students drop classes? What are the key factors leading to academic success at university? What are the causes of class-based anxiety?</p>
-				<li><b>STEMcomm:</b> August 2016 - January 2017</li>
-				<p>Researched how to increase societal understanding of key scientific and technological concepts; webmaster and writer.</p>
-			</ul>
-		</blockquote>
-	</div>
-
-	<a href="javascript:void(0);" onclick="loadDiv('4')"><h4 id="4h">+ Resident Assistant @ Georgia Tech Housing</h4></a>
-	<div id="4" style="display: none">
-		<blockquote>
-		</blockquote>
-	</div>
-</article>
-
-
+<div class="home">
+	<section class="site-header">
+		<h1 class="smallcap"><a class="site-title" href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a></h1>
+		{% include nav.html %}
+		{% include intro.html %}
+	</section>
+	<section>
+		<ul class="post-list">
+			{% for post in site.posts %}
+			<li>
+				<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+</div>
