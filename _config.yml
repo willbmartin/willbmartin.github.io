@@ -1,6 +1,6 @@
 # Site settings
-title: "WillMartian.com"
-description: "testing 123..."
+title: "willmartian.com"
+description: "Space Pirate of the Open Web"
 baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
 url: ""
 author: "William Martin"
@@ -13,7 +13,7 @@ permalink: pretty
 # Third-party services
 # just leave empty to disable it
 google_analytics:
-disqus_shortname: 
+disqus_shortname: willmartian
 
 plugins:
   - jekyll-sitemap
