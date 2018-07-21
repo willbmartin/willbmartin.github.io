@@ -1,13 +1,45 @@
-<!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    <div class="page-content">
-      {{ content }}
-      <div class="copyright">
-        <p>&copy; {{ site.time | date: '%Y' }} <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><strong>{{ site.title }}</strong></a> ― Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/heiswayi/textlog">Textlog theme</a></p>
-      </div>
-    </div>
-    {% include google_analytics.html %}
-  </body>
+	<head>
+		<meta charset='utf-8'>
+		<title>👽 will martian</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../fonts/font.css">
+	</head>
+	<body>
+		<div class="flex-container">
+			<header>
+				<a href="http://willmartian.com/"><h1>Will Marti(a)n 👽</h1></a>
+			</header>
+			<script type="text/javascript">
+
+				window.onscroll = function() {stickNavBar()};
+				var navBar = document.getElementById("navBar");
+				var sticky = navBar.offsetTop;
+				function stickNavBar() {
+					if (window.pageYOffset >= sticky) {
+						navBar.classList.add("sticky");
+					} else {
+					    navBar.classList.remove("sticky");
+					}
+				}
+
+				function loadDiv(div) {
+					var header = document.getElementById(div + 'h').innerHTML;
+		   			if (document.getElementById(div).style.display == "none") {
+		   				
+		   				document.getElementById(div + 'h').innerHTML = '-' + header.slice(1, header.length);
+		   				document.getElementById(div).style.display = "block";
+		   			} else {
+		   				document.getElementById(div).style.display = "none";
+		   				document.getElementById(div + 'h').innerHTML = '+' + header.slice(1, header.length);
+		   			}
+				}
+			</script>
+				{{ content }}
+			<footer>
+				<!-- <a href="https://twitter.com/will_martian?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @will_martian</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	  			<a href="mailto:contact@willmartian.com">contact@willmartian.com 📧</a> -->
+			</footer>
+		</div>
+	</body>
 </html>
