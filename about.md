@@ -1,6 +1,6 @@
 ---
-layout: page
 title: About
+layout: page
 ---
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+Hey, I am Will! I am still working on this page (and site) a bit.
