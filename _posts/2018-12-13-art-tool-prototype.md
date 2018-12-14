@@ -10,13 +10,11 @@ comment: true
 
 Testdbnakejnbk
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js">
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
 
-</script>
-
-<script src="http://willmartian.com/assets/stampede.js">
-      
-</script>
+<script
+src="http://willmartian.com/assets/stampede.js"></script>
 
 <div id="canvas">
     
