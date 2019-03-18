@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'FixedsysExcelsior';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fsex300-webfont.eot');
+    src: url('../fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fsex300-webfont.woff') format('woff'),
+         url('../fonts/fsex300-webfont.ttf') format('truetype'),
+         url('../fonts/fsex300-webfont.svg#FixedsysExcelsior301Regular') format('svg');
+    -webkit-font-smoothing: aliased;
+    font-smooth: never;
+}
+
+html {
+	font-family: 'FixedsysExcelsior';
+}

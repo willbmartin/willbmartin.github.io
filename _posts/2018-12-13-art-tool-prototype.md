@@ -1,5 +1,5 @@
 ---
-layout: postCustomJS
+layout: post
 title: "Stampede: A Drawing Tool Prototype"
 tags: [projects]
 author: Will Martin
