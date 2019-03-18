@@ -1,5 +1,5 @@
 # Site settings
-title: "willmartian.com"
+title: "willmartian.com 👽"
 description: "Space Pirate of the Open Web"
 baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
 url: ""
