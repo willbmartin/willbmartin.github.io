@@ -19,3 +19,12 @@ html {
 a {
 	font-family: 'FixedsysExcelsior';
 }
+
+.footer {
+  margin: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
