@@ -14,30 +14,51 @@
 html, body {
   font-family: Courier, monospace;
   margin: 1em, auto;
-  max-width: 650px;
+/*   max-width: 650px; */
   line-height: 1.6;
   font-size: 18px;
   color:#444;
-  padding:0 10px;
 }
 
 h1, h2, h3 {
-  line-height:1.2
+  line-height:1.2;
+  font-family: 'FixedsysExcelsior';
+  color: #444;
 }
 
 a {
   font-family: 'FixedsysExcelsior';
+  color: #444;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+/*   color: #444; */
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+/*   color: #444; */
 }
 
 .site-header {
   background-color: #c9ffe5;
+  margin: 1em;
+  padding: .5em .5em .5em .5em;
+  border: 3px solid;
+  box-shadow: 5px 10px;
 }
 
 .footer {
   margin: 1em;
-  position: fixed;
-  left: 0;
+  padding: .5em .5em .5em .5em;
+/*   position: fixed; */
+/*   width: 100%; */
+/*   max-width: 100%; */
+/*   left: 0; */
   bottom: 0;
-  width: 100%;
+/*   right: 0; */
   background-color: #c9ffe5;
+  border: 3px solid;
+  box-shadow: 5px 10px;
 }
