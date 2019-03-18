@@ -12,5 +12,10 @@
 }
 
 html {
+	font-family: Courier, monospace;
+	margin: 1em;
+}
+
+a {
 	font-family: 'FixedsysExcelsior';
 }
