@@ -17,13 +17,14 @@ html {
 
 #background {
 /*   font-family: Courier, monospace; */
+  font-weight: 1000;
   font-family: 'FixedsysExcelsior', monospace;
   position: fixed;
-  top: -5%;
+  top: -20%;
   right: -100%;
   z-index: -1;
   overflow: hidden;
-  font-size: 4.5px;
+  font-size: 7px;
   animation-name: slide-bg;
   animation-duration: 3s;
   animation-delay: 1s;
@@ -32,7 +33,7 @@ html {
 
 @keyframes slide-bg {
   from {right: -100%;}
-  to {right: -10%;}
+  to {right: -15%;}
 }
 
 body {
@@ -42,6 +43,8 @@ body {
   line-height: 1.6;
   font-size: 18px;
   color:#444;
+/*   background-color: rgb(214, 234, 248); */
+  background-image: linear-gradient(to right, rgb(255,255,255), rgb(255,255,255), rgb(255,255,255), rgb(0,0,0));
 }
 
 h1, h2, h3 {
@@ -64,7 +67,8 @@ a:hover, a:active {
 }
 
 .site-header {
-  background-color: #c9ffe5;
+/*   background-color: #c9ffe5; */
+  background-color: rgb(220,220,220);
   margin: 1em;
   padding: .5em .5em .5em .5em;
   border: 3px solid;
@@ -80,7 +84,7 @@ a:hover, a:active {
 }
 
 .post-header {
-  background-color: #c9ffe5;
+  background-color: rgb(220,220,220);
   margin: 1em;
   padding: .5em .5em .5em .5em;
   border: 3px solid;
@@ -98,7 +102,7 @@ a:hover, a:active {
   margin: 1em;
   padding: .5em;
   bottom: 0;
-  background-color: #c9ffe5;
+  background-color: rgb(220,220,220);
   border: 3px solid;
   box-shadow: 5px 10px;
 }
