@@ -24,6 +24,14 @@ html {
   z-index: -1;
   overflow: hidden;
   font-size: 4.5px;
+  animation-name: slide-bg;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+@keyframes slide-bg {
+  from {right: -100%;}
+  to {right: -10%;}
 }
 
 body {
