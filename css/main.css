@@ -19,11 +19,11 @@ html {
 /*   font-family: Courier, monospace; */
   font-family: 'FixedsysExcelsior', monospace;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -5%;
+  right: -10%;
   z-index: -1;
   overflow: hidden;
-  font-size: 5px;
+  font-size: 4.5px;
 }
 
 body {
@@ -80,7 +80,9 @@ a:hover, a:active {
 
 .post-content {
   margin: 1em;
-  padding: .5em .5em .5em .5em;
+  padding: .5em;
+  background-color: rgba(255,255,255,.85);
+  border-radius: 25px
 }
 
 .footer {
