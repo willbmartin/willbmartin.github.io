@@ -67,3 +67,15 @@ a:hover, a:active {
   border: 3px solid;
   box-shadow: 5px 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    font-family: Courier, monospace;
+    margin: 1em, auto;
+    /*max-width: 75%;*/ 
+    line-height: 1.6;
+    font-size: 18px;
+    color:#444;
+  }
+}
