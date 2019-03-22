@@ -23,7 +23,10 @@ html {
   right: -100%;
   z-index: -1;
   overflow: hidden;
-  font-size: 7px;
+/*  font-size: 7px;
+*/  
+  font-size: 1.2vh;
+
   animation-name: slide-bg;
   animation-duration: 3s;
   animation-fill-mode: forwards;
