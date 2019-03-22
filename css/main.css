@@ -16,9 +16,8 @@ html {
 }
 
 #background {
-/*   font-family: Courier, monospace; */
+   font-family: Courier, monospace; 
   font-weight: 1000;
-  font-family: 'FixedsysExcelsior', monospace;
   position: fixed;
   top: -20%;
   right: -100%;
@@ -27,7 +26,6 @@ html {
   font-size: 7px;
   animation-name: slide-bg;
   animation-duration: 3s;
-  animation-delay: 1s;
   animation-fill-mode: forwards;
   background-image: linear-gradient(to right, rgb(255,255,255), rgb(255,255,255), rgb(200,200,200), rgb(100,100,100), rgb(0,0,0),rgb(0,0,0),rgb(0,0,0));
 }
@@ -74,6 +72,11 @@ a:hover, a:active {
   box-shadow: 5px 10px;
 }
 
+.page-content {
+  margin: 1em;
+  opacity: 1;
+}
+
 #disqus_thread {
   background-color: #FFF;
   margin: 1em;
@@ -83,7 +86,7 @@ a:hover, a:active {
 }
 
 .post-header {
-  background-color: rgb(220,220,220);
+  background-color: rgb(255,255,255);
   margin: 1em;
   padding: .5em .5em .5em .5em;
   border: 3px solid;
