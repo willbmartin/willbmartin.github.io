@@ -75,6 +75,10 @@ a:hover, a:active {
   box-shadow: 5px 10px;
 }
 
+.filters {
+  display: table-row;
+}
+
 .page-content {
   margin: 1em;
   opacity: 1;

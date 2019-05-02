@@ -2,13 +2,79 @@
 layout: default
 ---
 <div class="home">
+	{% assign rawtags = "" %}
+	{% for post in site.posts %}
+		{% assign ttags = post.tags | join:'|' | append:'|' %}
+		{% assign rawtags = rawtags | append:ttags %}
+	{% endfor %}
+	{% assign rawtags = rawtags | split:'|' | sort %}
+
+	{% assign tags = "" %}
+	{% for tag in rawtags %}
+		{% if tag != "" %}
+			{% if tags == "" %}
+				{% assign tags = tag | split:'|' %}
+			{% endif %}
+			{% unless tags contains tag %}
+				{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+			{% endunless %}
+		{% endif %}
+	{% endfor %}
+
 	<section>
+		<nav id="filters">
+			<b>Filter Posts:</b>
+			{% for tag in tags %}
+			<!-- <button type="button" id="{{ tag }}">#{{ tag }}</button> -->
+			<div class="filter-button">
+			  <input type="checkbox" class="filter-button-input" id="{{ tag }}-tag" name="{{ tag }}">
+			  <label for="{{ tag }}">#{{ tag }}</label>
+			</div>
+			{% endfor %}
+		</nav>
 		<ul class="post-list">
 			{% for post in site.posts %}
-			<li>
+				{% assign classtags = "" %}
+				{% for tag in post.tags %}
+					{% assign classtags = classtags | append: tag | append: "-tag " %}
+				{% endfor %}
+
+			<li class="post-list-item {{ classtags }}">
 				<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
 			</li>
 			{% endfor %}
 		</ul>
 	</section>
+	<script>
+			const filtersNav = document.getElementById('filters');
+
+			filtersNav.addEventListener('change', (event) => {
+			    // console.log(event.target);
+			    let checked = [];
+			    for (let checkbox of document.getElementsByClassName("filter-button-input")) {
+			    	if (checkbox.checked) {
+			    		checked.push(checkbox.name + "-tag");
+			    	}
+			    }
+			    let postListItems = document.getElementsByClassName("post-list-item");
+			    for (let post of postListItems) {
+			    	let visible = true;
+			    	for (let tag of checked) {
+			    		if (!post.classList.contains(tag)) {
+			    			visible = false;
+			    			break;
+			    		}
+			    	}
+
+			    	if (!visible) {
+			    		post.style.display = "none";
+			    	} else {
+			    		post.style.display = "list-item";
+			    	}
+			    }
+			    // console.log({{ rawtags }})
+
+
+			});
+	</script>
 </div>
