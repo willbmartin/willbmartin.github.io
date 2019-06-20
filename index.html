@@ -47,9 +47,7 @@ layout: default
 	</section>
 	<script>
 			const filtersNav = document.getElementById('filters');
-
 			filtersNav.addEventListener('change', (event) => {
-			    // console.log(event.target);
 			    let checked = [];
 			    for (let checkbox of document.getElementsByClassName("filter-button-input")) {
 			    	if (checkbox.checked) {
@@ -65,16 +63,12 @@ layout: default
 			    			break;
 			    		}
 			    	}
-
 			    	if (!visible) {
 			    		post.style.display = "none";
 			    	} else {
 			    		post.style.display = "list-item";
 			    	}
 			    }
-			    // console.log({{ rawtags }})
-
-
 			});
 	</script>
 </div>
