@@ -22,7 +22,7 @@ html {
 }
 
 #background {
-   font-family: Courier, monospace; 
+  font-family: Courier, monospace; 
   font-weight: 1000;
   position: fixed;
   top: -20%;
@@ -149,6 +149,10 @@ a:hover, a:active {
     line-height: 1.6;
     font-size: 18px;
     color:#444;
+  }
+
+  #filters {
+    display: none;
   }
 
   .post-image {
