@@ -22,26 +22,45 @@ html {
 }
 
 #background {
-  font-family: Courier, monospace; 
+  display: none;
+  font-family: Impact; 
   font-weight: 1000;
   position: fixed;
-  top: -20%;
-  right: -100%;
-  z-index: -1;
-  overflow: hidden;
-/*  font-size: 7px;
-*/  
-  font-size: 1.2vh;
+  
+  right: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  z-index: -2;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden; 
+  font-size: 7vh;
+  background-color: transparent;
 
-  animation-name: slide-bg;
+  animation-name: bg;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  background-image: linear-gradient(to right, rgb(255,255,255), rgb(255,255,255), rgb(200,200,200), rgb(100,100,100), rgb(0,0,0),rgb(0,0,0),rgb(0,0,0));
 }
 
-@keyframes slide-bg {
-  from {right: -100%;}
-  to {right: -15%;}
+@keyframes bg {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+#bg-gradient {
+  display: none;
+  background-image: linear-gradient(to right, rgba(255,255,255,100%), rgba(255,255,255,0));
+  position: fixed;
+  /*top: -20%;*/
+  /*right: -100%;*/
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -115,7 +134,8 @@ a:hover, a:active {
   padding: .5em;
   background-color: rgba(255,255,255,.85);
   border-radius: 25px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  width: 150%;
 }
 
 .post-image {
@@ -125,8 +145,20 @@ a:hover, a:active {
   border: 3px solid;
   /*box-shadow: 5px 10px;*/
   /*background-color: var(--box-bg-color, #c9ffe5);*/
-  max-width: 50%;
+  max-width: 300px;
   align-items: left;
+  float: left;
+}
+
+.post-banner {
+  margin-right: 1em;
+  margin-bottom: 2em;
+  /*padding: .5em;*/
+  border: 3px solid;
+  /*box-shadow: 5px 10px;*/
+  /*background-color: var(--box-bg-color, #c9ffe5);*/
+  max-width: 100%;
+  align-items: center;
   float: left;
 }
 
@@ -162,8 +194,24 @@ a:hover, a:active {
     border: 3px solid;
     /*box-shadow: 5px 10px;*/
     /*background-color: var(--box-bg-color, #c9ffe5);*/
-    max-width: 90%;
+    max-width: 50%;
     align-items: center;
+  }
+
+  .post-banner {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    /*padding: .5em;*/
+    border: 3px solid;
+    /*box-shadow: 5px 10px;*/
+    /*background-color: var(--box-bg-color, #c9ffe5);*/
+    max-width: 60%;
+    align-items: center;
+    float: left;
+  }
+
+  .banner-container {
+    width: 100%;
   }
 
   #background {
